@@ -1,0 +1,30 @@
+{
+  "name": "isocertificado",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tw:build": "tailwindcss build ./src/styles.css -o ./public/styles.css",
+    "tw:watch": "onchange 'tailwind.config.js' '.src/*.css' -- npm run tw:build",
+    "tw:prod": "SET NODE_ENV=production & postcss build ./src/styles.css -o ./public/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/montesdeideias/isocertificado.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/montesdeideias/isocertificado/issues"
+  },
+  "homepage": "https://github.com/montesdeideias/isocertificado#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "cssnano": "^4.1.10",
+    "onchange": "^7.1.0",
+    "postcss": "^8.2.8",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.3"
+  }
+}

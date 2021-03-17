@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta property="og:site_name"
+        content="ISOACUSTICA certificacao acustica | certificado acustico empresa certificacao energetica certificado acustico lisboa porto faro braga viana do castelo vila real braganca viseu guarda aveiro coimbra evora beja santarem leiria setubal castelo branco">
+    <meta property="og:title" content="ISOACUSTICA Certificação Acústica">
+    <meta property="og:description"
+        content="Vai ARRENDAR ou VENDER a sua casa? Temos o seu
+​CERTIFICADO ACÚSTICO Com Garantia de Rapidez e do Melhor Preço | certificado acústico lisboa, certificado acústico porto, certificado acústico faro">
+    <meta property="og:url" content="https://www.isoacustica.pt/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Temos o seu ​CERTIFICADO ACÚSTICO Com Garantia de Rapidez e do Melhor Preço">
+    <link rel="stylesheet" href="styles.css">
+    <title>Isoacústica</title>
+</head>
+<!--             START                 -->
+
+<body>
+    <!-- navigation -->
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <div class="w-full text-iso-200 dark-mode:text-gray-200 dark-mode:bg-gray-800  fixed nav-fixed top-0">
+        <div x-data="{ open: false }"
+            class="flex flex-col max-w-screen-xl mx-auto md:items-center md:justify-between md:flex-row ">
+            <div class="p-4 flex flex-row items-center justify-between">
+                <!-- Logo -->
+                <div class="logo w-40"><a href="index.html"><img src="img/isocertificado.svg" alt="isocertificado"></a>
+                </div>
+                <!-- burger -->
+                <button class="md:hidden  focus:outline-none" @click="open = !open">
+                    <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+                        <path x-show="!open" fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                        <path x-show="open" fill-rule="evenodd"
+                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- nav list -->
+            <nav :class="{'flex': open, 'hidden': !open} "
+                class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row text-right font-semibold uppercase shadow-xl md:shadow-none ">
+                <a class="px-2 py-2 mt-2 mr-4 text-sm  font-semibold   md:mt-0  hover:text-iso-100  focus:outline-none "
+                    href="index.html">inicio</a>
+                <a class="px-2 py-2 mt-2 mr-4 text-sm font-semibold bg-transparent  md:mt-0 md:ml-4  hover:text-iso-100  focus:outline-none "
+                    href="orcamento.html">orçamento</a>
+                <a class="px-2 py-2 mt-2 mr-4 text-sm font-semibold bg-transparent  md:mt-0 md:ml-4  hover:text-iso-100  focus:outline-none "
+                    href="profissionais.html">profissionais</a>
+                <a class="px-2 py-2 mt-2 mr-4 text-sm font-semibold bg-transparent  md:mt-0 md:ml-4  hover:text-iso-100  focus:outline-none "
+                    href="contacto.html">contacto</a></li>
+                <a href="login.html"
+                    class="px-2 py-2 mt-2  mr-4 text-sm font-semibold bg-transparent self-end  md:mt-0 md:ml-4  hover:text-iso-100  focus:outline-none"><svg
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#184D47" width="20px"
+                        height="20px">
+                        <path d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" />
+                    </svg></a>
+
+            </nav>
+        </div>
+    </div>
+    <!-- header -->
+    <section class="text-iso-200 h-screen header flex justify-center items-center bg-cover">
+        <!-- wrapper -->
+
+        <div class="h-60 w-full md:w-3/4 lg:w-1/2 px-4 mt-18 sm:mt-0">
+            <h1 class="font-bold text-6xl sm:text-5xl">Certificação Energética</h1>
+            <h2 class="font-bold uppercase my-2">orçamentos online grátis</h2>
+            <a href="vilanovafamalicao.html"><button class="botao btn-dark-xl bg-white">Consultar
+                    Preço</button></a>
+    </section>
+    <!-- informações -->
+    <section class="h-auto flex justify-center items-center my-20">
+        <!-- wrapper -->
+        <div class="w-full md:w-120 px-4 lg:w-160 flex flex-col justify-center items-center">
+            <h2 class="font-bold text-iso-200 text-2xl">O certificado energético</h2>
+            <p class="font-medium text-justify text-gray-800 my-4">O certificado energético é obrigatório em edifícios
+                novos e antigos a
+                partir do
+                momento em que são
+                colocados
+                no mercado para venda ou arrendamento, pelos proprietários ou pelos mediadores imobiliários. O documento
+                tem
+                de ser apresentado quando é assinado o contrato de compra e venda, locação financeira ou arrendamento,
+                atestando a informação divulgada de início sobre a classe energética a que o imóvel pertence. Também os
+                edifícios que sejam alvo de intervenções superiores a 25% do seu valor são obrigados a solicitar a
+                emissão
+                do certificado energético.
+            </p>
+            <div>
+                <!-- card1 -->
+                <a href="documentacao.html">
+                    <div class="info-card h-20 sm:h-24 mx-2 my-2">
+                        <!-- icon -->
+                        <div
+                            class="bg-gradient-to-r from-iso-100 to-iso-200 card-badge w-20 sm:w-24 rounded-full flex justify-center items-center  ">
+                            <svg class="w-6 h-6" viewBox="0 0 30 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.8624 0H2.28777C1.66887 0.0159156 1.08145 0.268448 0.65313 0.702724C0.224814 1.137 -0.00978336 1.71793 0.000312883 2.31929V31.6807C-0.00978336 32.2821 0.224814 32.863 0.65313 33.2973C1.08145 33.7316 1.66887 33.9841 2.28777 34H27.7122C28.3311 33.9841 28.9186 33.7316 29.3469 33.2973C29.7752 32.863 30.0098 32.2821 29.9997 31.6807V9.61714L19.8624 0ZM18.7499 10.9286V2.23429L27.8747 10.9286H18.7499Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                        <!-- card content -->
+                        <div class="card-content py-8 pl-4 self-center w-auto">
+                            <h3 class="text-iso-200 font-bold text-base leading-5">Toda a documentação necessária</h3>
+                        </div>
+                        <!-- arrow -->
+                        <div class="self-center m-6 w-8 h-8">
+
+                            <svg viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M39.375 2.8125H5.625C4.87908 2.8125 4.16371 3.10882 3.63626 3.63626C3.10882 4.16371 2.8125 4.87908 2.8125 5.625V39.375C2.8125 40.1209 3.10882 40.8363 3.63626 41.3637C4.16371 41.8912 4.87908 42.1875 5.625 42.1875H39.375C40.1209 42.1875 40.8363 41.8912 41.3637 41.3637C41.8912 40.8363 42.1875 40.1209 42.1875 39.375V5.625C42.1875 4.87908 41.8912 4.16371 41.3637 3.63626C40.8363 3.10882 40.1209 2.8125 39.375 2.8125ZM5.625 0C4.13316 0 2.70242 0.592632 1.64752 1.64752C0.592632 2.70242 0 4.13316 0 5.625L0 39.375C0 40.8668 0.592632 42.2976 1.64752 43.3525C2.70242 44.4074 4.13316 45 5.625 45H39.375C40.8668 45 42.2976 44.4074 43.3525 43.3525C44.4074 42.2976 45 40.8668 45 39.375V5.625C45 4.13316 44.4074 2.70242 43.3525 1.64752C42.2976 0.592632 40.8668 0 39.375 0L5.625 0Z"
+                                    fill="#184D47" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M21.5044 31.9334C21.3735 31.8028 21.2696 31.6476 21.1987 31.4768C21.1278 31.3059 21.0913 31.1228 21.0913 30.9378C21.0913 30.7528 21.1278 30.5697 21.1987 30.3988C21.2696 30.228 21.3735 30.0728 21.5044 29.9422L28.9491 22.5003L21.5044 15.0584C21.3737 14.9277 21.27 14.7725 21.1992 14.6016C21.1285 14.4308 21.092 14.2477 21.092 14.0628C21.092 13.8779 21.1285 13.6948 21.1992 13.524C21.27 13.3532 21.3737 13.1979 21.5044 13.0672C21.6352 12.9364 21.7904 12.8327 21.9612 12.762C22.1321 12.6912 22.3152 12.6548 22.5001 12.6548C22.685 12.6548 22.8681 12.6912 23.0389 12.762C23.2097 12.8327 23.3649 12.9364 23.4957 13.0672L31.9332 21.5047C32.0642 21.6353 32.1681 21.7905 32.2389 21.9613C32.3098 22.1322 32.3463 22.3153 32.3463 22.5003C32.3463 22.6853 32.3098 22.8684 32.2389 23.0393C32.1681 23.2101 32.0642 23.3653 31.9332 23.4959L23.4957 31.9334C23.3651 32.0644 23.2099 32.1683 23.039 32.2392C22.8682 32.3101 22.685 32.3466 22.5001 32.3466C22.3151 32.3466 22.1319 32.3101 21.9611 32.2392C21.7903 32.1683 21.6351 32.0644 21.5044 31.9334Z"
+                                    fill="#184D47" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.6562 22.5C12.6562 22.127 12.8044 21.7694 13.0681 21.5056C13.3319 21.2419 13.6895 21.0938 14.0625 21.0938H28.125C28.498 21.0938 28.8556 21.2419 29.1194 21.5056C29.3831 21.7694 29.5312 22.127 29.5312 22.5C29.5312 22.873 29.3831 23.2306 29.1194 23.4944C28.8556 23.7581 28.498 23.9062 28.125 23.9062H14.0625C13.6895 23.9062 13.3319 23.7581 13.0681 23.4944C12.8044 23.2306 12.6562 22.873 12.6562 22.5Z"
+                                    fill="#184D47" />
+                            </svg>
+
+                        </div>
+                    </div>
+                </a>
+                <!-- card 2 -->
+                <a href="sobre.html">
+                    <!-- card 2 -->
+                    <div class="info-card h-20 sm:h-24 mx-2 my-2">
+                        <!-- icon -->
+                        <div
+                            class="bg-gradient-to-r from-iso-100 to-iso-200 card-badge w-20 sm:w-24  rounded-full flex justify-center items-center  ">
+                            <svg class="w-6 h-6" viewBox="0 0 23 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17.58 0C20.93 0 22.605 2.0976 22.605 4.5011C22.605 7.5026 19.695 10.2787 15.9075 10.2787C12.735 10.2787 10.885 8.5537 10.9725 5.7017C10.9725 3.3028 13.175 0 17.58 0ZM7.2725 46C4.6275 46 2.69 44.5004 4.54 37.8948L7.575 26.1832C8.1025 24.311 8.19 23.5589 7.575 23.5589C6.7825 23.5589 3.3525 24.8515 1.32 26.128L0 24.104C6.43 19.0762 13.8275 16.1299 17.0025 16.1299C19.645 16.1299 20.085 19.0578 18.765 23.5589L15.2875 35.8685C14.6725 38.042 14.935 38.7918 15.5525 38.7918C16.345 38.7918 18.945 37.8902 21.5 36.0157L23 37.8879C16.745 43.746 9.9125 46 7.2725 46Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                        <!-- card content -->
+                        <div class="card-content py-8 pl-4 self-center w-auto">
+                            <h3 class="text-iso-200 font-bold text-base leading-5">Tudo sobre o certificado acústico
+                            </h3>
+                        </div>
+                        <!-- arrow -->
+                        <div class="self-center m-6 w-8 h-8">
+
+                            <svg viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M39.375 2.8125H5.625C4.87908 2.8125 4.16371 3.10882 3.63626 3.63626C3.10882 4.16371 2.8125 4.87908 2.8125 5.625V39.375C2.8125 40.1209 3.10882 40.8363 3.63626 41.3637C4.16371 41.8912 4.87908 42.1875 5.625 42.1875H39.375C40.1209 42.1875 40.8363 41.8912 41.3637 41.3637C41.8912 40.8363 42.1875 40.1209 42.1875 39.375V5.625C42.1875 4.87908 41.8912 4.16371 41.3637 3.63626C40.8363 3.10882 40.1209 2.8125 39.375 2.8125ZM5.625 0C4.13316 0 2.70242 0.592632 1.64752 1.64752C0.592632 2.70242 0 4.13316 0 5.625L0 39.375C0 40.8668 0.592632 42.2976 1.64752 43.3525C2.70242 44.4074 4.13316 45 5.625 45H39.375C40.8668 45 42.2976 44.4074 43.3525 43.3525C44.4074 42.2976 45 40.8668 45 39.375V5.625C45 4.13316 44.4074 2.70242 43.3525 1.64752C42.2976 0.592632 40.8668 0 39.375 0L5.625 0Z"
+                                    fill="#184D47" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M21.5044 31.9334C21.3735 31.8028 21.2696 31.6476 21.1987 31.4768C21.1278 31.3059 21.0913 31.1228 21.0913 30.9378C21.0913 30.7528 21.1278 30.5697 21.1987 30.3988C21.2696 30.228 21.3735 30.0728 21.5044 29.9422L28.9491 22.5003L21.5044 15.0584C21.3737 14.9277 21.27 14.7725 21.1992 14.6016C21.1285 14.4308 21.092 14.2477 21.092 14.0628C21.092 13.8779 21.1285 13.6948 21.1992 13.524C21.27 13.3532 21.3737 13.1979 21.5044 13.0672C21.6352 12.9364 21.7904 12.8327 21.9612 12.762C22.1321 12.6912 22.3152 12.6548 22.5001 12.6548C22.685 12.6548 22.8681 12.6912 23.0389 12.762C23.2097 12.8327 23.3649 12.9364 23.4957 13.0672L31.9332 21.5047C32.0642 21.6353 32.1681 21.7905 32.2389 21.9613C32.3098 22.1322 32.3463 22.3153 32.3463 22.5003C32.3463 22.6853 32.3098 22.8684 32.2389 23.0393C32.1681 23.2101 32.0642 23.3653 31.9332 23.4959L23.4957 31.9334C23.3651 32.0644 23.2099 32.1683 23.039 32.2392C22.8682 32.3101 22.685 32.3466 22.5001 32.3466C22.3151 32.3466 22.1319 32.3101 21.9611 32.2392C21.7903 32.1683 21.6351 32.0644 21.5044 31.9334Z"
+                                    fill="#184D47" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.6562 22.5C12.6562 22.127 12.8044 21.7694 13.0681 21.5056C13.3319 21.2419 13.6895 21.0938 14.0625 21.0938H28.125C28.498 21.0938 28.8556 21.2419 29.1194 21.5056C29.3831 21.7694 29.5312 22.127 29.5312 22.5C29.5312 22.873 29.3831 23.2306 29.1194 23.4944C28.8556 23.7581 28.498 23.9062 28.125 23.9062H14.0625C13.6895 23.9062 13.3319 23.7581 13.0681 23.4944C12.8044 23.2306 12.6562 22.873 12.6562 22.5Z"
+                                    fill="#184D47" />
+                            </svg>
+
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- profissionais -->
+    <section
+        class="h-auto py-10 w-full bg-gradient-to-tr from-iso-100 to-iso-200 flex flex-col justify-center items-center">
+        <!-- wrapper -->
+
+        <div class="p-info w-full px-4 md:w-130 text-white ">
+            <div class="overflow-hidden  w-auto">
+                <img src="img/prof.jpg" alt="profissionais" class="w-full">
+            </div>
+            <h3 class="font-bold text-2xl my-2">Soluções para profissionais</h3>
+            <p class="text-justify 00">A ISOCERTIFICADO - Certificação Energética tem soluções para
+                profissionais ligados
+                ao ramo imobiliário e da
+                construção.
+                Ofereça aos seus clientes, um dos mais eficientes serviços de certificação energética e aumente os seus
+                lucros, com os protocolos de parceria que oferecemos.</p>
+            <br>
+            <p>Comissionistas / Revenda de serviços / Interligação de serviços</p>
+            <a href="profissionais.html">
+                <button
+                    class="font-semibold px-10 py-2 border-2 border-white  hover:bg-iso-200 hover:border-iso-200 my-2">Saber
+                    Mais</button>
+            </a>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="bg-gray-800 text-white flex px-12 lg:px-0 justify-center w-full ">
+        <!-- content wrapper -->
+        <div class="wrapper w-full lg:w-4/6 max-w-6xl flex py-12 flex-col md:flex-row justify-between ">
+            <!-- left -->
+            <div class=" flex flex-col md:w-110 items-center md:items-start">
+                <a href="index.html">
+                    <div class="logo w-40"><img src="img/isocertificado.svg" alt="isocertificado"></div>
+                </a>
+                <p class="italic">Certificação Energética</p>
+                <p class="max-w-xl text-xs ">A ISOCERTIFICADO - Certificação Energética pertence
+                    ao grupo <br>ISOMÉTRICA - engenharia todos os direitos reservados.</p>
+                <img class="w-32 my-2" src="img/grupo-isometrica.svg" alt="grupo isométrica">
+                <!-- logos de terceiros -->
+                <div class="icons hidden">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+                <hr class="w-80 my-2">
+            </div>
+            <!-- right -->
+            <div class="w-full md:w-110 flex flex-col items-center md:items-end md:mt-0 mt-2">
+                <div>
+                    <h5>subscreva a nossa newsletter</h5>
+
+                    <div class="email-input flex flex-col sm:flex-row">
+                        <input type="email" name="" id="" class="my-2 py-1 px-3 text-gray-800">
+                        <button class="my-2 sm:mx-1 btn-dark font-bold text-gray-800">Subscrever</button>
+                    </div>
+                    <!-- links-wrapper -->
+                    <div class="flex mt-4 flex-col items-center text-center md:flex-row  md:items-start  md:text-left">
+                        <div class="links1">
+                            <h5 class="font-semibold text-iso-100">Informações</h5>
+                            <ul class="text-sm">
+                                <li><a href="legislacao.html">legislação</a></li>
+                                <li><a href="termos.html">termos</a></li>
+                                <li><a href="privacidade.html">politica de privacidade</a></li>
+                            </ul>
+                        </div>
+                        <div class="links1 ml-0 md:ml-6 ">
+                            <h5 class="font-semibold text-iso-100">Links úteis</h5>
+                            <ul class="text-sm">
+                                <li><a href="orcamento.html">orçamentos</a></li>
+                                <li><a href="profissionais.html">profissionais</a></li>
+                                <li><a href="contacto.html">contactos</a></li>
+                                <li><a href="documentacao.html">documentação</a></li>
+                                <li><a href="sobre.html">o que é o certificado</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class=" text-white copyright bg-gray-900 h-12 flex items-center justify-center">
+        <p>&copy; isocertificado
+            <script>document.write(new Date().getFullYear())</script>
+        </p>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

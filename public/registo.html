@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta property="og:image" content="https://cdn2.editmysite.com/images/site/footer/og-image-placeholder-blank.png" />
+    <meta property="og:title" content="Certificado Acustico - Registo de parceiros" />
+    <meta property="og:url" content="https://www.isocertificado.pt/orcamento.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isoacustica - Registo de Parceiros</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <!-- navigation -->
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <div class="w-full text-iso-200 dark-mode:text-gray-200 dark-mode:bg-gray-800  fixed nav-fixed top-0 ">
+        <div x-data="{ open: false }"
+            class="flex flex-col max-w-screen-xl mx-auto md:items-center md:justify-between md:flex-row ">
+            <div class="p-4 flex flex-row items-center justify-between">
+                <!-- Logo -->
+                <div class="logo w-40"><a href="index.html"><img src="img/isocertificado.svg" alt="isocertificado"></a>
+                </div>
+                <!-- burger -->
+                <button class="md:hidden  focus:outline-none" @click="open = !open">
+                    <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+                        <path x-show="!open" fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                        <path x-show="open" fill-rule="evenodd"
+                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- nav list -->
+            <nav :class="{'flex': open, 'hidden': !open} "
+                class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row text-right font-semibold uppercase shadow-xl md:shadow-none ">
+                <a class="px-2 py-2 mt-2 mr-4 text-sm  font-semibold   md:mt-0  hover:text-iso-100  focus:outline-none "
+                    href="index.html">inicio</a>
+                <a class="px-2 py-2 mt-2 mr-4 text-sm font-semibold bg-transparent  md:mt-0 md:ml-4  hover:text-iso-100  focus:outline-none "
+                    href="orcamento.html">orçamento</a>
+                <a class="px-2 py-2 mt-2 mr-4 text-sm font-semibold bg-transparent  md:mt-0 md:ml-4  hover:text-iso-100  focus:outline-none "
+                    href="profissionais.html">profissionais</a>
+                <a class="px-2 py-2 mt-2 mr-4 text-sm font-semibold bg-transparent  md:mt-0 md:ml-4  hover:text-iso-100  focus:outline-none "
+                    href="contacto.html">contacto</a></li>
+                <a href="login.html"
+                    class="px-2 py-2 mt-2  mr-4 text-sm font-semibold bg-transparent self-end  md:mt-0 md:ml-4  hover:text-iso-100  focus:outline-none"><svg
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#184D47" width="20px"
+                        height="20px">
+                        <path d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" />
+                    </svg></a>
+
+            </nav>
+        </div>
+    </div>
+    <!-- orcamento -->
+    <section class=" flex items-center flex-col my-20">
+        <!-- center wrapper -->
+        <div class="w-full lg:w-160  px-4">
+            <!-- header image -->
+            <div class="reg w-auto text-gray-800 p-4 h-56 flex justify-end items-start flex-col">
+
+                <h1 class="font-bold text-2xl w-full ">Registo de Parceiro</h1>
+
+                <style>
+                    .reg {
+                        background-image: url("img/reg-cover.jpg");
+                        background-position: bottom left;
+
+                    }
+                </style>
+            </div>
+            <!-- forms -->
+            <!-- component -->
+            <div class="">
+                <div class="w-full ">
+                    <!-- form start -->
+                    <!-- dados pessoais -->
+                    <form class="mt-6 flex flex-col">
+
+                        <!-- title -->
+                        <p class="text-iso-200 font-semibold my-2 text-lg">Os seus dados</p>
+
+                        <!-- line 1 -->
+                        <div class="my-2 gap-3">
+                            <!-- col 1 full -->
+                            <span class="flex-shrink w-full ">
+                                <label for="name" class="block text-sm font-semibold text-gray-600">Nome</label>
+                                <input id="name" type="name" name="name" placeholder="o seu nome completo"
+                                    autocomplete="name"
+                                    class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
+                                    required />
+                            </span>
+                        </div>
+                        <!-- line 2 -->
+                        <div class="flex flex-col sm:flex-row gap-3">
+                            <!-- col 1 -->
+                            <span class="flex-shrink w-full sm:w-1/2">
+                                <label for="email" class="block text-sm font-semibold text-gray-600">E-mail</label>
+                                <input id="email" type="email" name="email" placeholder="o seu email"
+                                    autocomplete="email"
+                                    class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
+                                    required />
+                            </span>
+                            <!-- col 2 -->
+                            <span class="flex-shrink w-full sm:w-1/2">
+                                <label for="phone" class="block text-sm font-semibold text-gray-600">Contacto</label>
+                                <input id="phone" type="phone" placeholder="o seu contacto" autocomplete="phone"
+                                    class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
+                                    required />
+                            </span>
+                        </div>
+                        <!-- line 3 -->
+                        <div class="my-2">
+                            <!-- col 1 full -->
+                            <span class="flex-shrink w-full ">
+                                <label for="name" class="block text-sm font-semibold text-gray-600">Morada</label>
+                                <input id="name" type="name" name="name" placeholder="o seu nome completo"
+                                    autocomplete="name"
+                                    class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
+                                    required />
+                            </span>
+                        </div>
+
+                        <!-- line 4 -->
+                        <div class="flex flex-col sm:flex-row gap-3 ">
+                            <!-- col 1 -->
+                            <span class="flex-shrink w-full sm:w-3/4">
+                                <label for="phone" class="block text-sm font-semibold text-gray-600">Localidade</label>
+                                <input id="phone" type="phone" placeholder="a sua localidade de atividade"
+                                    autocomplete="phone"
+                                    class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
+                                    required />
+                            </span>
+                            <!-- col 2 -->
+                            <span class="flex-shrink w-full sm:w-1/2">
+                                <label for="code" class="block text-sm font-semibold text-gray-600">Código
+                                    Postal</label>
+                                <div class="flex items-center justify-between">
+                                    <input id="code" type="code" placeholder="codigo postal"
+                                        class=" w-1/2 p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner" />
+                                    <p class="mx-2 font-bold">-</p>
+                                    <input id="code" type="code" placeholder=""
+                                        class="flex-1 w-2/5 p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner" />
+                                </div>
+                            </span>
+                        </div>
+
+                        <!-- line 2 -->
+                        <div class="flex flex-col sm:flex-row gap-3 mt-2">
+                            <!-- col 1 -->
+                            <span class="flex-shrink w-full sm:w-1/2">
+                                <label for="atividade"
+                                    class="block font-semibold text-gray-600 text-sm">Atividade</label>
+                                <select id="atividade" type="text" name="atividade"
+                                    class="cursor-pointer block w-full p-3 mt-2 text-gray-700 bg-gray-200  focus:outline-none appearance-none focus:bg-gray-300 focus:shadow-inner"
+                                    required>
+                                    <option value=""></option>
+                                    <option value="Advogado">Advogado(a)</option>
+                                    <option value="Solicitador">Solicitador(a)</option>
+                                    <option value="Arquiteto">Arquiteto(a)</option>
+                                    <option value="Engenheiro">Engenheiro(a)</option>
+                                    <option value="Mediador imobiliario">Mediador(a) imobiliario(a)</option>
+                                    <option value="Particular">Particular(a)</option>
+                                </select>
+                            </span>
+                            <!-- col 2 -->
+                            <span class="flex-shrink w-full sm:w-1/2">
+                                <label for="nif" class="block text-sm font-semibold text-gray-600">NIF</label>
+                                <input id="nif" type="nif" placeholder="NIF" autocomplete="nif"
+                                    class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
+                                    required />
+                            </span>
+                        </div>
+                        <div class="flex flex-col sm:flex-row gap-3 mt-2">
+                            <!-- col 2 -->
+                            <span class="flex-shrink w-full sm:w-1/2">
+                                <label for="password" class="block font-semibold text-gray-600 text-sm">Password</label>
+                                <input id="password" type="password" name="password" placeholder="password"
+                                    autocomplete="password"
+                                    class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
+                                    required />
+                            </span>
+                            <!-- col 2 -->
+                            <span class="flex-shrink w-full sm:w-1/2">
+                                <label for="password" class="block font-semibold text-gray-600 text-sm">Repetir
+                                    Password</label>
+                                <input id="password" type="password" name="password" placeholder="repita a password"
+                                    autocomplete="password"
+                                    class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
+                                    required />
+                            </span>
+                        </div>
+                        <button type="submit" class="btn-submit">
+                            Pedido de Registo
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <!-- end forms -->
+
+
+
+
+
+    </section>
+    <!-- end orcamento -->
+    <!-- footer -->
+    <footer class="bg-gray-800 text-white flex px-12 lg:px-0 justify-center w-full ">
+        <!-- content wrapper -->
+        <div class="wrapper w-full lg:w-4/6 max-w-6xl flex py-12 flex-col md:flex-row justify-between ">
+            <!-- left -->
+            <div class=" flex flex-col md:w-110 items-center md:items-start">
+                <a href="index.html">
+                    <div class="logo w-40"><img src="img/isocertificado.svg" alt="isocertificado"></div>
+                </a>
+                <p class="italic">Certificação Energética</p>
+                <p class="max-w-xl text-xs ">A ISOCERTIFICADO - Certificação Energética pertence
+                    ao grupo <br>ISOMÉTRICA - engenharia todos os direitos reservados.</p>
+                <img class="w-32 my-2" src="img/grupo-isometrica.svg" alt="grupo isométrica">
+                <!-- logos de terceiros -->
+                <div class="icons hidden">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+                <hr class="w-80 my-2">
+            </div>
+            <!-- right -->
+            <div class="w-full md:w-110 flex flex-col items-center md:items-end md:mt-0 mt-2">
+                <div>
+                    <h5>subscreva a nossa newsletter</h5>
+                    <div class="email-input flex flex-col sm:flex-row">
+                        <input type="email" name="" id="" class="my-2 py-1 px-3 text-gray-800">
+                        <button class="my-2 sm:mx-1 btn-dark font-bold text-gray-800">Subscrever</button>
+                    </div>
+                    <!-- links-wrapper -->
+                    <div class="flex mt-4 flex-col items-center text-center md:flex-row  md:items-start  md:text-left">
+                        <div class="links1">
+                            <h5 class="font-semibold text-iso-100">Informações</h5>
+                            <ul class="text-sm">
+                                <li><a href="legislacao.html">legislação</a></li>
+                                <li><a href="termos.html">termos</a></li>
+                                <li><a href="privacidade.html">politica de privacidade</a></li>
+                            </ul>
+                        </div>
+                        <div class="links1 ml-0 md:ml-6 ">
+                            <h5 class="font-semibold text-iso-100">Links úteis</h5>
+                            <ul class="text-sm">
+                                <li><a href="orcamento.html">orçamentos</a></li>
+                                <li><a href="profissionais.html">profissionais</a></li>
+                                <li><a href="contacto.html">contactos</a></li>
+                                <li><a href="documentacao.html">documentação</a></li>
+                                <li><a href="sobre.html">o que é o certificado</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class=" text-white copyright bg-gray-900 h-12 flex items-center justify-center">
+        <p>&copy; isocertificado
+            <script>document.write(new Date().getFullYear())</script>
+        </p>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

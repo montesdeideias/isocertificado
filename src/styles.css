@@ -1,0 +1,99 @@
+/* 
+
+To update this file:
+
+After edit run command
+npm run build-css
+
+{build-css is a script on package.json file }
+
+*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+nav li{
+    margin-left: 2rem;
+
+    @apply hover:opacity-70;
+}
+
+.btn-dark{
+    @apply font-bold px-4 py-1 bg-iso-200 hover:bg-iso-100 text-white;
+}
+
+.btn-dark-xl{
+    @apply font-bold px-5 py-3 bg-iso-200 hover:bg-iso-100 text-white;
+}
+
+.btn-big-light{
+    @apply font-semibold px-10 py-2 border-2 border-iso-200  hover:text-gray-800 hover:border-iso-200 hover:bg-iso-200 w-56;
+}
+.btn-submit{
+    @apply py-4 bg-iso-200 w-full mt-6 font-semibold focus:outline-none hover:bg-iso-100 text-white;
+}
+
+.btn-reset{
+    @apply font-semibold bg-red-700 text-white hover:text-white hover:bg-red-500 px-10 py-1 ;
+}
+.info-card{
+    @apply bg-white shadow-xl rounded-full flex     ;
+}
+
+
+/* background change */
+@media only screen and (min-width:641px){
+    .header{
+        background-image: url(img/iso-bg-lg.jpg);
+        background-repeat: no-repeat;
+        background-position:top  center;
+        
+    }
+}
+/* @media only screen and (min-width:1930px){
+    .header{
+        background-image: url(img/iso-bg-xl.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        
+    }
+    .header div {
+        max-width: 80rem;
+    }
+} */
+@media only screen and (max-width:640px){
+    .header{
+        background-image: url(img/iso-bg-xs.jpg);
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        
+    }
+}
+
+/* nav animation */
+.nav-fixed {
+    transition: background-color 0.2s ease-in-out;
+}
+
+.nav-active {
+    background-color:#fff;
+    transition: background-color 0.2s ease-in-out;
+}
+/* footer links hover effect */
+li > a{
+    @apply hover:text-iso-200;
+}
+
+h3{
+    @apply font-bold text-2xl my-2;
+}
+h4 {
+    @apply text-iso-200 text-xl font-semibold;
+}
